@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Auriculares Logitech G733 Con Micrófono Inalámbricos Lightspeed Rgb P Color Azul",
+    "marca": "Logitech",
+    "image": "1.jpg",
+    "price": 120000,
+    "is_weekly": true
+  },
+  {
+    "id": 2,
+    "name": "Auricular Gp-aorus H1 7.1 Rgb Gigabyte",
+    "marca": "Aorus",
+    "image": "2.jpg",
+    "price": 100000,
+    "is_weekly": true
+  },
+  {
+    "id": 3,
+    "name": "Micrófono Logitech Yeti GX",
+    "marca": "Logitech",
+    "image": "3.jpg",
+    "price": 110000,
+    "is_weekly": true
+  },
+  {
+    "id": 4,
+    "name": "Micrófono Redragon Fenris GM301",
+    "marca": "Redragon",
+    "image": "4.jpg",
+    "price": 95000,
+    "is_weekly": true
+  },
+  {
+    "id": 5,
+    "name": "Mouse Logitech G502 Hero",
+    "marca": "Logitech",
+    "image": "5.jpg",
+    "price": 80000,
+    "is_weekly": true
+  },
+  {
+    "id": 6,
+    "name": "Mouse Logitech G309 ligthspeed wireless white",
+    "marca": "Logitech",
+    "image": "6.jpg",
+    "price": 80000,
+    "is_weekly": true
+  },
+  {
+    "id": 7,
+    "name": "Teclado USB GAMER Redragon KUMARA K552 mecanico BLACK RGB Red Switch",
+    "marca": "Redragon",
+    "image": "7.jpg",
+    "price": 85000,
+    "is_weekly": true
+  },
+  {
+    "id": 8,
+    "name": "Teclado Mecanico GAMER Redragon K552 Rgb Kumara Switch BLUE",
+    "marca": "Redragon",
+    "image": "8.jpg",
+    "price": 85000,
+    "is_weekly": true
+  }
+]

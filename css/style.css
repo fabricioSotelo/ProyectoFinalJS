@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Orbitron', sans-serif;
+}
+body {
+  background-color: #061827; 
+  color: #467c46; 
+}
+
+.navbar {
+  background: black;
+  border-bottom: 2px solid #00ff99;
+}
+
+.nav-item {
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  background-color: #333;
+}
+
+.nav-item:active {
+  background-color: #555;
+  color: white;
+  scale: 0.95;
+}
+
+.navbar-logo {
+  align-items: center;
+  width: 120px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.navbar .nav-link:hover {
+  color: #00ff99;
+}
+
+.card-img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+  align-self: center;
+  transition: all 0.3s ease;
+}
+
+.card-img:hover {
+  transform: scale(1.05);
+}
+
+.card-title {
+  text-align: center;
+}
+
+.card-text {
+  text-align: center;
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+.counter {
+  align-self: center;
+}
+
+.card-add-btn {
+  transition: all 0.3s ease;
+}
+
+.carousel-control {
+  width: 10%;
+  max-width: 100px;
+  transition: all 0.2s ease;
+}
+
+.carousel-control:active {
+  transform: scaleY(1.01);
+}
+
+.card-refresh-btn {
+  margin-right: -10px;
+}
+
+.card-plus-btn, .card-minus-btn, .card-refresh-btn {
+  transition: all 0.3s ease;
+}
+
+.card-plus-btn:active, .card-minus-btn:active, .card-refresh-btn:active {
+  transform: scale(0.95);
+}
