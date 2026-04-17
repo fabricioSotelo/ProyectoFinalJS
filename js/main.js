@@ -2,17 +2,16 @@ const URL = "./db/perifericos.json";
 let perifericos = [];
 let weeklyPerifericos = [];
 
-function getPerifericos() {
-  fetch(URL)
-    .then((response) => response.json())
-    .then((data) => {
-      perifericos = data;
-      weeklyPerifericos = data.filter((periferico) => periferico.is_weekly);
-      renderWeeklyPerifericos(weeklyPerifericos);
-    })
-    .catch((error) => {
-      showErrorAlert("Surgio un error al cargar los perifericos: " + error);
-    });
+async function getPerifericos() {
+  try {
+    const response = await fetch(URL);
+    const data = await response.json();
+    perifericos = data;
+    weeklyPerifericos = data.filter(p => p.is_weekly);
+    renderWeeklyPerifericos(weeklyPerifericos);
+  } catch (error) {
+    showErrorAlert("Error al cargar periféricos: " + error);
+  }
 }
 
 getPerifericos();
@@ -28,7 +27,7 @@ function renderWeeklyPerifericos(perifericos) {
     <div class="row justify-content-center">
       <div class="col-sm-8 col-md-6 col-lg-4">
         <div class="card h-100 shadow">
-          <img src="../assets/img/${periferico.image}" class="card-img mt-4" alt="${periferico.name} Picture"/>
+          <img src="./assets/img/${periferico.image}" class="card-img mt-4" alt="${periferico.name} Picture"/>
           <div class="card-body d-flex flex-column">
             <h5 class="card-title">${periferico.name}</h5>
             <p class="card-text mb-1">Marca: <strong>${periferico.marca}</strong></p>

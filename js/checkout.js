@@ -14,7 +14,7 @@ try {
 function renderPerifericosSummary() {
     if (!carrito || carrito.length === 0) {
         perifericosSummary.innerHTML = "<p>No hay productos en el carrito.</p>";
-        perifericosTotal.textContent = "S/ 0.00";
+        perifericosTotal.textContent = "$ 0.00";
         return;
     }
 
@@ -89,7 +89,7 @@ function showErrorAlert(message) {
 function purchaseSuccess() {
     Swal.fire({
         title: "¡Pago exitoso!",
-        text: "Gracias por tu compra. Te hemos enviado un correo con el detalle.",
+        text: "Gracias por tu compra. Tu pedido fue procesado.",
         icon: "success",
         confirmButtonText: "Aceptar"
     }).then(() => {

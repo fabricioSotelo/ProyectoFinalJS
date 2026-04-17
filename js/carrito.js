@@ -74,7 +74,7 @@ function addEventsItem(carritoItem) {
       updateCarrito();
 
       const toast = Toastify({
-        text: `Se elimino el producto del carrito`,
+        text: `Se eliminó ${perifericoItem.name} del carrito`,
         duration: 1200,
         close: false,
         stopOnFocus: false,
